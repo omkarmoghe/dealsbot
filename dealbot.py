@@ -1,5 +1,6 @@
 import sms
 import praw
+import globals
 
 class DealBot():
 
@@ -8,7 +9,7 @@ class DealBot():
         self.user_agent = ("/r/buildapcsales deal finder by /u/OmkarEdits")
         self.reddit = praw.Reddit(user_agent = self.user_agent)
 
-        self.reddit.login()  # login to reddit
+        self.reddit.login(username=globals.USERNAME, password=globals.PASSWORD)  # login to reddit
 
     def update_posts(self):
         sub = self.reddit.get_subreddit("buildapcsales", fetch=True)
@@ -19,7 +20,7 @@ class DealBot():
             print submission.nsfw
 
     def matches_search(self, submission):
-        print "white space is retarded"
+        print "white space blows"
 
 
 d = DealBot()

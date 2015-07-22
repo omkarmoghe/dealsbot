@@ -1,7 +1,7 @@
 from twilio.rest import TwilioRestClient
 import globals
 
-def sendSMS (message):
+def send_SMS (message):
     # import auth codes for Twilio
     account_sid = globals.ACCOUNT_SID
     auth_token = globals.AUTH_TOKEN
@@ -10,5 +10,4 @@ def sendSMS (message):
 
     client = TwilioRestClient(account_sid, auth_token)
      
-    message = client.messages.create(to=to_phone, from_=from_phone,
-                                         body=str(message))
+    message = client.messages.create(to=to_phone, from_=from_phone, body=str(message))
