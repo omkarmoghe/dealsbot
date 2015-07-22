@@ -29,4 +29,10 @@ TO_PHONE = "YOUR PHONE"
 # your Twilio phone number
 # FORMAT: "+1234567890"
 TWILIO_PHONE = "YOUR TWILIO PHONE"
+
+# your Reddit username
+USERNAME = "YOUR REDDIT USERNAME"
+
+# your Reddit password
+PASSWORD = "YOUR REDDIT PASSWORD"
 ```
