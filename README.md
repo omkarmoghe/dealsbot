@@ -36,3 +36,10 @@ USERNAME = "YOUR REDDIT USERNAME"
 # your Reddit password
 PASSWORD = "YOUR REDDIT PASSWORD"
 ```
+Make sure that you have the latest versions of PRAW and Twilio
+
+`pip install praw` or `pip install --upgrade praw`
+
+`pip install twilio` or `pip install --upgrade twilio`
+
+**Finally, to run the bot:** `python run.py`

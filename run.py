@@ -7,4 +7,3 @@ print "staring dealsbot..."
 subprocess.call(filepath, shell=True)
 print("activated!")
 subprocess.call("python dealbot.py", shell=True)
-print("dealsbot is running...")
